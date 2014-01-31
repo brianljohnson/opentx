@@ -179,7 +179,8 @@ enum menuGeneralSetupItems {
   IF_GPS(ITEM_SETUP_TIMEZONE)
   IF_GPS(ITEM_SETUP_GPSFORMAT)
   IF_PXX(ITEM_SETUP_COUNTRYCODE)
-  IF_CPUARM(ITEM_SETUP_LANGUAGE)
+  IF_MULTILANGUAGE(ITEM_SETUP_MENU_LANGUAGE)
+  IF_CPUARM(ITEM_SETUP_VOICE_LANGUAGE)
   IF_CPUARM(ITEM_SETUP_IMPERIAL)
   IF_FAI_CHOICE(ITEM_SETUP_FAI)
   IF_MAVLINK(ITEM_MAVLINK_BAUD)
@@ -542,8 +543,14 @@ void menuGeneralSetup(uint8_t event)
         break;
 #endif
 
+#if defined(MULTILANGUAGE)
+      case ITEM_SETUP_MENU_LANGUAGE:
+        g_eeGeneral.menuLanguage = selectMenuItem(RADIO_SETUP_2ND_COLUMN, y, STR_MENULANG, STR_MENULANGUAGES, g_eeGeneral.menuLanguage, 0, LANGID_HIGHEST, attr, event);
+        break;
+#endif
+
 #if defined(CPUARM)
-      case ITEM_SETUP_LANGUAGE:
+      case ITEM_SETUP_VOICE_LANGUAGE:
         lcd_putsLeft(y, STR_VOICELANG);
         lcd_putsAtt(RADIO_SETUP_2ND_COLUMN, y, currentLanguagePack->name, attr);
         if (attr) {

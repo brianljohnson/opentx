@@ -1471,6 +1471,24 @@ enum AUDIO_SOUNDS {
 #include "targets/gruvin9x/somo14d.h"
 #endif
 
+// Multi or Single Language Support
+#if defined(PCBTARANIS)
+  #define MULTILANGUAGE   
+  #define IF_MULTILANGUAGE(x) x,
+  #define LANGID_ENGLISH    0
+  #define LANGID_CZECH      1
+  #define LANGID_FRENCH     2
+  #define LANGID_ITALIAN    3
+  #define LANGID_POLISH     4
+  #define LANGID_PORTUGUESE 5
+  #define LANGID_SPANISH    6
+  #define LANGID_SWEDISH    7
+  #define LANGID_HIGHEST LANGID_SWEDISH 
+#else
+  #define SINGLELANGUAGE
+  #define IF_MULTILANGUAGE(x)
+#endif
+
 #include "translations.h"
 
 #if defined(HAPTIC)

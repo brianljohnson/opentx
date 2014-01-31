@@ -240,7 +240,8 @@ enum BeeperMode {
   int8_t   wavVolume; \
   int8_t   varioVolume; \
   int8_t   backgroundVolume; \
-  uint8_t  hw_uartMode;
+  uint8_t  hw_uartMode; \
+  uint8_t  menuLanguage;
 #elif defined(PXX)
   #define EXTRA_GENERAL_FIELDS uint8_t  countryCode;
 #else

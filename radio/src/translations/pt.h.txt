@@ -758,11 +758,11 @@
 #define TR_ABOUT_PARENTS_3     "ER9X (Erez Raviv)"
 #define TR_ABOUT_PARENTS_4     "TH9X (Thomas Husterer)"
 
-#define TR_CHR_SHORT  's'
-#define TR_CHR_LONG   'l'
-#define TR_CHR_TOGGLE 't'
-#define TR_CHR_HOUR   'h'
-#define TR_CHR_INPUT           'I'   // Values between A-I will work
+#define TR_CHR_SHORT           's'
+#define TR_CHR_LONG            'l'
+#define TR_CHR_TOGGLE          't'
+#define TR_CHR_HOUR            'h'
+#define TR_CHR_INPUT           'I'   /* Values between A-I will work */
 
 #define TR_BEEP_VOLUME         "Beep Volume"
 #define TR_WAV_VOLUME          "Wav Volume"
@@ -773,3 +773,9 @@
 #define TR_ALTITUDE            INDENT "Altitude"
 #define TR_MODS_FORBIDDEN      "Modifications forbidden!"
 #define TR_UNLOCKED            "Unlocked"
+
+#define TR_MENULANG            "Menu Language"
+#define LEN_MENULANGUAGES      TR("\002", "\012")
+#define TR_MENULANGUAGES       TR("EN""CZ""FR""IT""PL""PT""ES""SE", "English\0  ""Czech\0    ""French\0   ""Italian\0  ""Polish\0   ""Portuguese\0""Spanish\0  ""Swedish\0  ")
+
+

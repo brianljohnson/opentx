@@ -159,7 +159,8 @@ extern const pm_char STR_OPEN9X[];
 #if defined(CPUARM)
   #define OFS_VUNITSSYSTEM     (OFS_VLCD + sizeof(TR_VLCD))
   #define OFS_VBEEPCOUNTDOWN   (OFS_VUNITSSYSTEM + sizeof(TR_VUNITSSYSTEM))
-  #define OFS_COUNTRYCODES     (OFS_VBEEPCOUNTDOWN + sizeof(TR_VBEEPCOUNTDOWN))
+  #define OFS_MENULANGUAGES    (OFS_VBEEPCOUNTDOWN + sizeof(TR_VBEEPCOUNTDOWN))
+  #define OFS_COUNTRYCODES     (OFS_MENULANGUAGES + sizeof(TR_MENULANGUAGES))
 #else
   #define OFS_COUNTRYCODES     (OFS_VLCD)
 #endif
@@ -183,7 +184,7 @@ extern const pm_char STR_OPEN9X[];
   #define OFS_MAVLINK_AP_MODES	(OFS_MAVLINK_AC_MODES + sizeof(TR_MAVLINK_AC_MODES))
   #define OFS_SPARE		(OFS_MAVLINK_AP_MODES + sizeof(TR_MAVLINK_AP_MODES))
 #else
-  #define OFS_SPARE				(OFS_MAVLINK_BAUDS)
+  #define OFS_SPARE             (OFS_MAVLINK_BAUDS)
 #endif
 
 #define STR_OFFON              (STR_OPEN9X + OFS_OFFON)
@@ -270,9 +271,13 @@ extern const pm_char STR_OPEN9X[];
 #endif
 
 #if defined(MAVLINK)
-  #define STR_MAVLINK_BAUDS		(STR_OPEN9X + OFS_MAVLINK_BAUDS)
-  #define STR_MAVLINK_AC_MODES	(STR_OPEN9X + OFS_MAVLINK_AC_MODES)
-  #define STR_MAVLINK_AP_MODES	(STR_OPEN9X + OFS_MAVLINK_AP_MODES)
+  #define STR_MAVLINK_BAUDS    (STR_OPEN9X + OFS_MAVLINK_BAUDS)
+  #define STR_MAVLINK_AC_MODES (STR_OPEN9X + OFS_MAVLINK_AC_MODES)
+  #define STR_MAVLINK_AP_MODES (STR_OPEN9X + OFS_MAVLINK_AP_MODES)
+#endif
+
+#if defined(MULTILANGUAGES)    
+  #define STR_MULTILANGUAGES   (STR_OPEN9X + OFS_MULTILANGUAGES)
 #endif
   
 // The 0-terminated-strings
@@ -760,6 +765,12 @@ extern const pm_char STR_VIEW_TEXT[];
   extern const pm_char STR_ABOUT_PARENTS_3[];
   extern const pm_char STR_ABOUT_PARENTS_4[];
 #endif
+
+#if defined(MULTILANGUAGE)
+  extern const pm_char STR_MENULANG[];
+  extern const pm_char STR_MENULANGUAGES[];
+#endif
+
 
 #define CHR_SHORT  TR_CHR_SHORT
 #define CHR_LONG   TR_CHR_LONG

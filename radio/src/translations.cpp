@@ -113,9 +113,12 @@ const pm_char STR_OPEN9X[] PROGMEM =
     ISTR(VTRAINERMODES)
 #endif
 #if defined(MAVLINK)
-	ISTR(MAVLINK_BAUDS)
-	ISTR(MAVLINK_AC_MODES)
-	ISTR(MAVLINK_AP_MODES)
+    ISTR(MAVLINK_BAUDS)
+    ISTR(MAVLINK_AC_MODES)
+    ISTR(MAVLINK_AP_MODES)
+#endif
+#if defined(MULTILANGUAGE)
+    ISTR(MENULANGUAGES);
 #endif
     ;
 
@@ -572,6 +575,10 @@ const pm_char STR_VIEW_TEXT[] PROGMEM = "View text";
   const pm_char STR_ABOUT_PARENTS_2[] PROGMEM = TR_ABOUT_PARENTS_2;
   const pm_char STR_ABOUT_PARENTS_3[] PROGMEM = TR_ABOUT_PARENTS_3;
   const pm_char STR_ABOUT_PARENTS_4[] PROGMEM = TR_ABOUT_PARENTS_4;
+#endif
+
+#if defined(MULTILANGUAGE)
+  const pm_char STR_MENULANG[] PROGMEM = TR_MENULANG;
 #endif
 
 const pm_uchar font_5x7[] PROGMEM = {
