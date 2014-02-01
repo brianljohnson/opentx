@@ -86,6 +86,7 @@ const pm_char STR_OPEN9X[] PROGMEM =
     ISTR(VOLTSRC)
     ISTR(VARIOSRC)
     ISTR(VSCREEN)
+    ISTR(MENULANGUAGES)
 #endif
 #if defined(TEMPLATES)
     ISTR(VTEMPLATES)
@@ -116,9 +117,6 @@ const pm_char STR_OPEN9X[] PROGMEM =
     ISTR(MAVLINK_BAUDS)
     ISTR(MAVLINK_AC_MODES)
     ISTR(MAVLINK_AP_MODES)
-#endif
-#if defined(MULTILANGUAGE)
-    ISTR(MENULANGUAGES);
 #endif
     ;
 

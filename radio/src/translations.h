@@ -133,7 +133,8 @@ extern const pm_char STR_OPEN9X[];
   #define OFS_VOLTSRC          (OFS_GPSFORMAT + sizeof(TR_GPSFORMAT))
   #define OFS_VARIOSRC         (OFS_VOLTSRC + sizeof(TR_VOLTSRC))
   #define OFS_VSCREEN          (OFS_VARIOSRC + sizeof(TR_VARIOSRC))
-  #define OFS_VTEMPLATES       (OFS_VSCREEN + sizeof(TR_VSCREEN))
+  #define OFS_MENULANGUAGES    (OFS_VSCREEN + sizeof(TR_VSCREEN))
+  #define OFS_VTEMPLATES       (OFS_MENULANGUAGES + sizeof(TR_MENULANGUAGES))
 #else
   #define OFS_VTEMPLATES       (OFS_VTELEMCHNS + sizeof(TR_VTELEMCHNS))
 #endif
@@ -159,8 +160,7 @@ extern const pm_char STR_OPEN9X[];
 #if defined(CPUARM)
   #define OFS_VUNITSSYSTEM     (OFS_VLCD + sizeof(TR_VLCD))
   #define OFS_VBEEPCOUNTDOWN   (OFS_VUNITSSYSTEM + sizeof(TR_VUNITSSYSTEM))
-  #define OFS_MENULANGUAGES    (OFS_VBEEPCOUNTDOWN + sizeof(TR_VBEEPCOUNTDOWN))
-  #define OFS_COUNTRYCODES     (OFS_MENULANGUAGES + sizeof(TR_MENULANGUAGES))
+  #define OFS_COUNTRYCODES     (OFS_VBEEPCOUNTDOWN + sizeof(TR_VBEEPCOUNTDOWN))
 #else
   #define OFS_COUNTRYCODES     (OFS_VLCD)
 #endif
@@ -228,6 +228,7 @@ extern const pm_char STR_OPEN9X[];
 #define STR_VARIOSRC           (STR_OPEN9X + OFS_VARIOSRC)
 #define STR_VSCREEN            (STR_OPEN9X + OFS_VSCREEN)
 #define STR_TELEMCHNS          (STR_OPEN9X + OFS_TELEMCHNS)
+#define STR_MENULANGUAGES      (STR_OPEN9X + OFS_MENULANGUAGES)
 #endif
 
 #ifdef TEMPLATES
@@ -274,10 +275,6 @@ extern const pm_char STR_OPEN9X[];
   #define STR_MAVLINK_BAUDS    (STR_OPEN9X + OFS_MAVLINK_BAUDS)
   #define STR_MAVLINK_AC_MODES (STR_OPEN9X + OFS_MAVLINK_AC_MODES)
   #define STR_MAVLINK_AP_MODES (STR_OPEN9X + OFS_MAVLINK_AP_MODES)
-#endif
-
-#if defined(MULTILANGUAGES)    
-  #define STR_MULTILANGUAGES   (STR_OPEN9X + OFS_MULTILANGUAGES)
 #endif
   
 // The 0-terminated-strings
@@ -768,7 +765,6 @@ extern const pm_char STR_VIEW_TEXT[];
 
 #if defined(MULTILANGUAGE)
   extern const pm_char STR_MENULANG[];
-  extern const pm_char STR_MENULANGUAGES[];
 #endif
 
 

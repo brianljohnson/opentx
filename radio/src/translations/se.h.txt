@@ -774,8 +774,8 @@
 #define TR_MODS_FORBIDDEN      "Modifikationer förbjudna!"
 #define TR_UNLOCKED            "Olåst"
 
-#define TR_MENULANG            "Menu Language"
+#define TR_MENULANG            "Meny-språk"
 #define LEN_MENULANGUAGES      TR("\002", "\012")
-#define TR_MENULANGUAGES       TR("EN""CZ""FR""IT""PL""PT""ES""SE", "Engelska\0 ""Tjeckiska\0""Franska\0  ""Italienska""Polska\0   ""Portugis.\0""Spanska\0  ""Svenska\0  ")
+#define TR_MENULANGUAGES       TR("EN""DE""CZ""FR""IT""PL""PT""ES""SE", "Engelska\0 ""Tyska\0    ""Tjeckiska\0""Franska\0  ""Italienska""Polska\0   ""Portugis.\0""Spanska\0  ""Svenska\0  ")
 
 

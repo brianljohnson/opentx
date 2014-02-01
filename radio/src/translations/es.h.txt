@@ -741,15 +741,15 @@
 #define TR_ABOUT_ROB_2         "openrcforums webmaster"
 
 #define TR_ABOUT_MARTIN_1      "Martin Hotar"
-#define TR_ABOUT_MARTIN_2      "Dise\201o grafico"
+#define TR_ABOUT_MARTIN_2      "Diseño grafico"
 
 #if defined(PCBTARANIS)
   #define TR_ABOUT_HARDWARE_1  "FrSky"
-  #define TR_ABOUT_HARDWARE_2  "Productor dise\201o de hardware"
+  #define TR_ABOUT_HARDWARE_2  "Productor diseño de hardware"
   #define TR_ABOUT_HARDWARE_3  "Firmware contributor"
 #else
   #define TR_ABOUT_HARDWARE_1  "Brent Nelson"
-  #define TR_ABOUT_HARDWARE_2  "Sky9x dise\201ador/productor"
+  #define TR_ABOUT_HARDWARE_2  "Sky9x diseñador/productor"
   #define TR_ABOUT_HARDWARE_3  ""
 #endif
 
@@ -776,6 +776,5 @@
 
 #define TR_MENULANG            "Menu Language"
 #define LEN_MENULANGUAGES      TR("\002", "\012")
-#define TR_MENULANGUAGES       TR("EN""CZ""FR""IT""PL""PT""ES""SE", "English\0  ""Czech\0    ""French\0   ""Italian\0  ""Polish\0   ""Portuguese\0""Spanish\0  ""Swedish\0  ")
-
+#define TR_MENULANGUAGES       TR("EN""CZ""FR""IT""PL""PT""ES""SE", "English\0  ""Czech\0    ""French\0   ""Italian\0  ""Polish\0   ""Portuguese""Spanish\0  ""Swedish\0  ")
 

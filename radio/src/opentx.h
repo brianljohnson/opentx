@@ -1472,17 +1472,18 @@ enum AUDIO_SOUNDS {
 #endif
 
 // Multi or Single Language Support
-#if defined(PCBTARANIS)
+#if defined(PCBTARANIS) || defined(CPUARM)
   #define MULTILANGUAGE   
   #define IF_MULTILANGUAGE(x) x,
   #define LANGID_ENGLISH    0
-  #define LANGID_CZECH      1
-  #define LANGID_FRENCH     2
-  #define LANGID_ITALIAN    3
-  #define LANGID_POLISH     4
-  #define LANGID_PORTUGUESE 5
-  #define LANGID_SPANISH    6
-  #define LANGID_SWEDISH    7
+  #define LANGID_GERMAN     1
+  #define LANGID_CZECH      2
+  #define LANGID_FRENCH     3
+  #define LANGID_ITALIAN    4
+  #define LANGID_POLISH     5
+  #define LANGID_PORTUGUESE 6
+  #define LANGID_SPANISH    7
+  #define LANGID_SWEDISH    8
   #define LANGID_HIGHEST LANGID_SWEDISH 
 #else
   #define SINGLELANGUAGE
