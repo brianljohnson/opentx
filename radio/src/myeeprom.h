@@ -239,7 +239,8 @@ enum BeeperMode {
   int8_t   beepVolume; \
   int8_t   wavVolume; \
   int8_t   varioVolume; \
-  int8_t   backgroundVolume;
+  int8_t   backgroundVolume; \
+  int8_t   menuLanguage;
 #endif
 
 #if defined(PCBTARANIS)

@@ -782,5 +782,5 @@
 
 #define TR_MENULANG            "Menu Language"
 #define LEN_MENULANGUAGES      TR("\002", "\012")
-#define TR_MENULANGUAGES       TR("EN""CZ""FR""IT""PL""PT""ES""SE", "English\0  ""Czech\0    ""French\0   ""Italian\0  ""Polish\0   ""Portuguese""Spanish\0  ""Swedish\0  ")
+#define TR_MENULANGUAGES       TR("EN""CZ""DE""ES""FR""IT""PL""PT""SE", "English\0  ""Czech\0    ""German\0   ""Spanish\0  ""French\0   ""Italian\0  ""Polish\0   ""Portuguese""Swedish\0  ")
 
